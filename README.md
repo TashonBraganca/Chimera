@@ -1,4 +1,4 @@
-# 🚀 Indian Small Cap Fund Analyzer
+#  Indian Small Cap Fund Analyzer
 
 ![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Libraries](https://img.shields.io/badge/Libraries-Pandas%20%7C%20Streamlit%20%7C%20Plotly-orange)
@@ -10,16 +10,7 @@ The result is a complete, end-to-end data pipeline and a live web application th
 
 ---
 
-## 📍 Table of Contents
-- [Live Application](#-live-application)
-- [Key Features & Analytical Approach](#-key-features--analytical-approach)
-- [How It Works: The Analysis Pipeline](#-how-it-works-the-analysis-pipeline)
-- [How to Run This Project Locally](#-how-to-run-this-project-locally)
-- [License](#-license)
-
----
-
-## 🌐 Live Application
+##  Live Application
 
 The final output of this project is a live, interactive dashboard built with Streamlit.
 
@@ -27,7 +18,7 @@ The final output of this project is a live, interactive dashboard built with Str
 
 ---
 
-## ✨ Key Features & Analytical Approach
+##  Key Features & Analytical Approach
 
 I designed this tool to be more advanced than standard platforms in a few key ways:
 
@@ -40,19 +31,19 @@ I designed this tool to be more advanced than standard platforms in a few key wa
 
 ---
 
-## ⛓️ How It Works: The Analysis Pipeline
+##  How It Works: The Analysis Pipeline
 
 The project is built as a series of scripts that create a repeatable and reliable analysis workflow.
 
-### 1. Data Ingestion & Validation (`01_... .py`)
+### 1. Data Ingestion & Validation (`1 Data Analysis.py`)
 
 This script automatically finds all relevant Small Cap funds, downloads their complete NAV history along with benchmark data, and then cleans and merges everything into a master dataset, ready for analysis.
 
-### 2. Metric Calculation (`02_... .py`)
+### 2. Metric Calculation (`2 Metrics.py`)
 
 This script takes the clean data and calculates a wide range of performance and risk metrics for every fund, including advanced measures like the Sortino Ratio, Max Drawdown, and Omega Ratio over multiple time horizons.
 
-### 3. Ranking & Analysis (`03_... .py`)
+### 3. Ranking & Analysis (`3 Fund Rank Analysis.py`)
 
 This is the core analytical engine. It downloads the Fama-French academic factor data, runs a regression for every fund to determine its true Alpha, and then uses the TOPSIS algorithm to produce the final, objective ranking based on all the data we've generated.
 
@@ -62,7 +53,7 @@ The final piece is the Streamlit app. It's a multi-page dashboard that presents 
 
 ---
 
-## 💻 How to Run This Project Locally
+##  How to Run This Project Locally
 
 ### Prerequisites
 
@@ -95,9 +86,9 @@ pip install -r requirements.txt
 
 #### Execute the scripts in order. It's a good idea to delete the data folder before the first run to ensure a clean start.
 ```bash
-python notebooks/01_data_ingestion_and_validation.py
-python notebooks/02_modeling_and_metrics.py
-python notebooks/03_ranking_and_analysis.py
+python notebooks/1 Data Analysis.py
+python notebooks/2 Metrics.py
+python notebooks/3 Fund Rank Analysis.py
 ```
 ### 5. Launch the Streamlit Application
 Once the pipeline has successfully generated the analysis files, you can launch the web app.
