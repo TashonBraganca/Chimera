@@ -1,0 +1,15 @@
+pandas
+requests
+yfinance
+pyarrow
+tqdm
+certifi
+statsmodels
+scikit-learn
+streamlit
+matplotlib
+seaborn
+plotly
+beautifulsoup4
+indiafactorlibrary
+lxml
