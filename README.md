@@ -23,7 +23,7 @@ The result is a complete, end-to-end data pipeline and a live web application th
 
 The final output of this project is a live, interactive dashboard built with Streamlit.
 
-**➡️ [Launch the Live App](YOUR_DEPLOYED_STREAMLIT_URL_HERE)** `<- Replace this with your live URL`
+**➡️https://chimera-v9tr844grufuxbdwm9mmlf.streamlit.app/)** 
 
 ---
 
@@ -79,10 +79,10 @@ cd Chimera
 ```bash
 Create and activate a virtual environment:
 python -m venv venv
-```bash
+
 # On Windows:
 venv\Scripts\activate
-```bash
+
 # On macOS/Linux:
 source venv/bin/activate
 ```
