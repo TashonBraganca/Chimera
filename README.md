@@ -78,7 +78,7 @@ cd Chimera
 ### 2. Setup the Environment
 ```bash
 Create and activate a virtual environment:
-bashpython -m venv venv
+python -m venv venv
 ```bash
 # On Windows:
 venv\Scripts\activate
@@ -89,19 +89,19 @@ source venv/bin/activate
 ### 3. Install Dependencies
 ```bash
 All required libraries are listed in the requirements.txt file.
-bashpip install -r requirements.txt
+pip install -r requirements.txt
 ```
 ### 4. Run the Data Pipeline
 
 #### Execute the scripts in order. It's a good idea to delete the data folder before the first run to ensure a clean start.
 ```bash
-bashpython notebooks/01_data_ingestion_and_validation.py
+python notebooks/01_data_ingestion_and_validation.py
 python notebooks/02_modeling_and_metrics.py
 python notebooks/03_ranking_and_analysis.py
 ```
 ### 5. Launch the Streamlit Application
 Once the pipeline has successfully generated the analysis files, you can launch the web app.
 ```bash
-bashstreamlit run app/app.py
+streamlit run app/app.py
 ```
 
